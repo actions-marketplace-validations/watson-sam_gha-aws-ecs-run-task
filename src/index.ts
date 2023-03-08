@@ -31,15 +31,15 @@ async function main() {
     subnets: [],
   };
 
-  const networkConfig: AWS.ECS.NetworkConfiguration = {
-    awsvpcConfiguration: vpcConfig,
-  };
+  // const networkConfig: AWS.ECS.NetworkConfiguration = {
+  //   awsvpcConfiguration: vpcConfig,
+  // };
 
   const overrides: AWS.ECS.ContainerOverrides = [];
 
   const runTaskRequest: AWS.ECS.RunTaskRequest = {
     taskDefinition: '',
-    networkConfiguration: networkConfig,
+    // networkConfiguration: networkConfig,
     overrides: {
       containerOverrides: overrides,
     },
@@ -54,10 +54,10 @@ async function main() {
   // REGION //
   //========//
 
-  const region = core.getInput('region');
-  if (region) {
-    options.region = region;
-  }
+  // const region = core.getInput('region');
+  // if (region) {
+  //   options.region = region;
+  // }
 
 
   //=============//
