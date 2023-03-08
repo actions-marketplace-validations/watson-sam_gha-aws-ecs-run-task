@@ -162,7 +162,7 @@ async function main() {
   //   `Container exited with code: ${exitCode}`
   // );
 
-  process.exit(1);
+  process.exit(0);
 
 
   function onStatusChange(update: TaskStatusUpdate) {

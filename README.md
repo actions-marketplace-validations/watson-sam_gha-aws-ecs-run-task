@@ -34,6 +34,12 @@ jobs:
           command: commands/do-something.js
 ```
 
+## Fresh Build
+
+```bash
+npm run build && npm run package
+```
+
 
 ## License (MIT)
 
