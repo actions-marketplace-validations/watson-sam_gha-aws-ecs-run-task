@@ -153,7 +153,7 @@ async function main() {
 
   const { exitCode } = await monitor({
     onStatusChange,
-    streamLogs: true,
+    exitProcess: true,
   });
 
   core.info(`Task finished`);
