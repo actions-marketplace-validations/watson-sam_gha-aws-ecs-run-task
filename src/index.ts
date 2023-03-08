@@ -149,18 +149,18 @@ async function main() {
 
   core.info(`\nTask is created:\n${taskId}\n`);
 
-//   core.info(`Starting task monitoring`);
+  core.info(`Starting task monitoring`);
 
-//   const { exitCode } = await monitor({
-//     exitProcess: true,
-//     onStatusChange,
-//   });
+  const { exitCode } = await monitor({
+    onStatusChange,
+    exitProcess: true,
+  });
 
-//   core.info(`Task finished`);
+  core.info(`Task finished`);
 
-//   core.info(
-//     `Container exited with code: ${exitCode}`
-//   );
+  core.info(
+    `Container exited with code: ${exitCode}`
+  );
 
   process.exit(-1);
 
