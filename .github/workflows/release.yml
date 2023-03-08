@@ -3,8 +3,6 @@ on:
    tags:
      - "v*"
 
-on: create
-
 name: Release
 jobs:
   release:
