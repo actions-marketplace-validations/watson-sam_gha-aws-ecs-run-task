@@ -1,5 +1,5 @@
 
-# the-moebius/gha-aws-ecs-run-task
+# watson-sam/gha-aws-ecs-run-task
 
 Runs AWS ECS tasks via GitHub Actions.
 
@@ -23,7 +23,7 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: eu-central-1
 
-      - uses: the-moebius/gha-aws-ecs-run-task@v1
+      - uses: watson-sam/gha-aws-ecs-run-task@v1
         with:
           launchType: FARGATE
           cluster: cluster-name
@@ -37,7 +37,7 @@ jobs:
 
 ## License (MIT)
 
-Copyright © 2021 Slava Fomin II
+Copyright © 2023 Sam Watson
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
